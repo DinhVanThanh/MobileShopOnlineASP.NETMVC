@@ -1,0 +1,28 @@
+﻿
+@{
+    ViewBag.Title = "CustomerProfile";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+@section scripts{
+<script src="~/Scripts/js/LoadGrid/LoadCustomerGrid.js"></script>
+<script src="~/Scripts/js/LoadData/LoadCustomerData.js"></script>
+<script src="~/Scripts/js/LoadForm/AddCustomer.js"></script>
+<script type="text/javascript">
+        $(function () {
+            LoadCustomerGrid();
+            LoadCustomerData();
+
+        });
+</script>
+    }
+
+
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">Panel title</h3>
+    </div>
+    <div class="panel-body">
+        <div id="grid" style="width: 100%; height: 500px;"></div>
+    </div>
+</div>

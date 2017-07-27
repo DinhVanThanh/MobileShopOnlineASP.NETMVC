@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="717e95d5005048f9b1a60d1046e3cf26" Name="Diagram1">
+        <EntityTypeShape EntityType="BanDoDienTuModel.ChiTietHoaDon" Width="1.5" PointX="8.25" PointY="3.5" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.ChiTietSanPham" Width="1.5" PointX="0.75" PointY="3.25" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.GiaoHang" Width="1.5" PointX="8.25" PointY="8.5" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.HoaDon" Width="1.5" PointX="6" PointY="8.25" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.KhachHang" Width="1.5" PointX="3.75" PointY="8.25" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.LoaiSanPham" Width="1.5" PointX="10.75" PointY="1.5" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.NhapSanPham" Width="1.5" PointX="5.25" PointY="3.25" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.NhaSanXuat" Width="1.5" PointX="0.75" PointY="0.75" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.PhanHoi" Width="1.5" PointX="10.75" PointY="4.5" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.Role" Width="1.5" PointX="1.5" PointY="11.75" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.SanPham" Width="1.5" PointX="3" PointY="2.75" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.ThongKe" Width="1.5" PointX="10.75" PointY="7.5" />
+        <EntityTypeShape EntityType="BanDoDienTuModel.User" Width="1.5" PointX="1.5" PointY="8.5" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_ChiTietHoaDon_HoaDon" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_ChiTietHoaDon_SanPham" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_SanPham_ChiTietSanPham" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_GiaoHang_HoaDon" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_HoaDon_KhachHang" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_KhachHang_User" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_SanPham_NhapSanPham" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_SanPham_NhaSanXuat" />
+        <AssociationConnector Association="BanDoDienTuModel.FK_User_Role" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

@@ -1,0 +1,104 @@
+﻿@model EShopOnline.Models.ProductDetail
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{ 
+    var item = Model;
+}
+
+@section scripts{
+    <script>
+        $(function () {
+            $('a').click(function () {
+                //alert($(this).attr('data-id'));
+                //$('#myModal').modal('show');
+                $.ajax({
+                    url: "Cart/AddToCart",
+                    dataType: 'text',
+                    method : 'get',
+                    data: { id: $(this).attr('data-id') },
+                    success: function (string) {
+                        if (string == "success")
+                        {
+                            $("#modalcontent").text("Thêm vào giỏ hàng thành công")
+                        }
+                        else if(string == "fail")
+                        {
+                            $("#modalcontent").text("Thêm vào giỏ hàng thất bại")
+                        }
+                        else {
+                            $("#modalcontent").text("Đăng nhập để mua hàngs")
+                        }
+                        $('#myModal').modal('show');
+                    }
+                })
+            })
+        })
+    </script>
+}
+
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Add To Cart</h4>
+            </div>
+            <div class="modal-body">
+                <p id="modalcontent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.Partial("Sidebar")
+            </div>
+
+            <div class="col-sm-9 padding-right">
+                <div class="product-details">
+                    <!--product-details-->
+                    <div class="col-sm-5">
+                        <div class="view-product">
+                            <img  src="~/Image/Phone/apple/@Model.Hinh" alt="" />
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <div class="product-information">
+                            <!--/product-information-->
+                            <img src="~/images/new.png" class="newarrival" alt="" />
+                            <h2>@Model.TenSP</h2>
+                            <img src="~/images/new.jpg" alt="" />
+                            <span>
+                                <span>@Model.GiaBan</span>
+                                <label>Quantity:</label>
+                                <input type="number"value="1" min="1" />
+                                <br />
+                                <a data-id="@item.MaSP" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add To Cart</a>
+                            </span>
+                            <p><b>Màn hình:</b> @Model.ManHinh</p>
+                            <p><b>Hệ điều hành:</b> @Model.HDH</p>
+                            <p><b>Camera:</b>@Model.Camera</p>
+                            <p><b>RAM:</b>@Model.RAM</p>
+                            <p><b>Bộ nhớ trong:</b>@Model.BoNhoTrong</p>
+                            <p><b>Dung lượng pin:</b>@Model.DungLuongPin</p>
+                            <a href="#"><img src="~/images/share.png" class="share img-responsive" alt="" /></a>
+                        </div><!--/product-information-->
+                    </div>
+                </div><!--/product-details-->
+
+
+            </div>
+        </div>
+    </div>
+</section>
+

@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BanDoDienTuModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BanDoDienTuEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="ChiTietHoaDons" EntityType="BanDoDienTuModel.ChiTietHoaDon" />
+    <EntitySet Name="ChiTietSanPhams" EntityType="BanDoDienTuModel.ChiTietSanPham" />
+    <EntitySet Name="GiaoHangs" EntityType="BanDoDienTuModel.GiaoHang" />
+    <EntitySet Name="HoaDons" EntityType="BanDoDienTuModel.HoaDon" />
+    <EntitySet Name="KhachHangs" EntityType="BanDoDienTuModel.KhachHang" />
+    <EntitySet Name="LoaiSanPhams" EntityType="BanDoDienTuModel.LoaiSanPham" />
+    <EntitySet Name="NhapSanPhams" EntityType="BanDoDienTuModel.NhapSanPham" />
+    <EntitySet Name="NhaSanXuats" EntityType="BanDoDienTuModel.NhaSanXuat" />
+    <EntitySet Name="PhanHois" EntityType="BanDoDienTuModel.PhanHoi" />
+    <EntitySet Name="Roles" EntityType="BanDoDienTuModel.Role" />
+    <EntitySet Name="SanPhams" EntityType="BanDoDienTuModel.SanPham" />
+    <EntitySet Name="ThongKes" EntityType="BanDoDienTuModel.ThongKe" />
+    <EntitySet Name="Users" EntityType="BanDoDienTuModel.User" />
+    <AssociationSet Name="FK_ChiTietHoaDon_HoaDon" Association="BanDoDienTuModel.FK_ChiTietHoaDon_HoaDon">
+      <End Role="HoaDon" EntitySet="HoaDons" />
+      <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ChiTietHoaDon_SanPham" Association="BanDoDienTuModel.FK_ChiTietHoaDon_SanPham">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="ChiTietHoaDon" EntitySet="ChiTietHoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SanPham_ChiTietSanPham" Association="BanDoDienTuModel.FK_SanPham_ChiTietSanPham">
+      <End Role="ChiTietSanPham" EntitySet="ChiTietSanPhams" />
+      <End Role="SanPham" EntitySet="SanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_GiaoHang_HoaDon" Association="BanDoDienTuModel.FK_GiaoHang_HoaDon">
+      <End Role="HoaDon" EntitySet="HoaDons" />
+      <End Role="GiaoHang" EntitySet="GiaoHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_HoaDon_KhachHang" Association="BanDoDienTuModel.FK_HoaDon_KhachHang">
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+      <End Role="HoaDon" EntitySet="HoaDons" />
+    </AssociationSet>
+    <AssociationSet Name="FK_KhachHang_User" Association="BanDoDienTuModel.FK_KhachHang_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="KhachHang" EntitySet="KhachHangs" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SanPham_NhapSanPham" Association="BanDoDienTuModel.FK_SanPham_NhapSanPham">
+      <End Role="SanPham" EntitySet="SanPhams" />
+      <End Role="NhapSanPham" EntitySet="NhapSanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_SanPham_NhaSanXuat" Association="BanDoDienTuModel.FK_SanPham_NhaSanXuat">
+      <End Role="NhaSanXuat" EntitySet="NhaSanXuats" />
+      <End Role="SanPham" EntitySet="SanPhams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_Role" Association="BanDoDienTuModel.FK_User_Role">
+      <End Role="Role" EntitySet="Roles" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="ChiTietHoaDon">
+    <Key>
+      <PropertyRef Name="MaHD" />
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaHD" Type="Int32" Nullable="false" />
+    <Property Name="MaSP" Type="Int32" Nullable="false" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="TongTien" Type="Int64" />
+    <NavigationProperty Name="HoaDon" Relationship="BanDoDienTuModel.FK_ChiTietHoaDon_HoaDon" FromRole="ChiTietHoaDon" ToRole="HoaDon" />
+    <NavigationProperty Name="SanPham" Relationship="BanDoDienTuModel.FK_ChiTietHoaDon_SanPham" FromRole="ChiTietHoaDon" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="ChiTietSanPham">
+    <Key>
+      <PropertyRef Name="MaCTSP" />
+    </Key>
+    <Property Name="MaCTSP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ManHinh" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="HDH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Camera" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="RAM" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="BoNhoTrong" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DungLuongPin" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SanPhams" Relationship="BanDoDienTuModel.FK_SanPham_ChiTietSanPham" FromRole="ChiTietSanPham" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="GiaoHang">
+    <Key>
+      <PropertyRef Name="MaGH" />
+    </Key>
+    <Property Name="MaGH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaHD" Type="Int32" Nullable="false" />
+    <Property Name="NgayGiao" Type="DateTime" Precision="0" />
+    <Property Name="TenNguoiNhan" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="DiaChi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="HoaDon" Relationship="BanDoDienTuModel.FK_GiaoHang_HoaDon" FromRole="GiaoHang" ToRole="HoaDon" />
+  </EntityType>
+  <EntityType Name="HoaDon">
+    <Key>
+      <PropertyRef Name="MaHD" />
+    </Key>
+    <Property Name="MaHD" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="NgayLap" Type="DateTime" Precision="0" />
+    <Property Name="TongTien" Type="Int64" />
+    <Property Name="TinhTrangDonHang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="MaKH" Type="Int32" />
+    <NavigationProperty Name="ChiTietHoaDons" Relationship="BanDoDienTuModel.FK_ChiTietHoaDon_HoaDon" FromRole="HoaDon" ToRole="ChiTietHoaDon" />
+    <NavigationProperty Name="GiaoHangs" Relationship="BanDoDienTuModel.FK_GiaoHang_HoaDon" FromRole="HoaDon" ToRole="GiaoHang" />
+    <NavigationProperty Name="KhachHang" Relationship="BanDoDienTuModel.FK_HoaDon_KhachHang" FromRole="HoaDon" ToRole="KhachHang" />
+  </EntityType>
+  <EntityType Name="KhachHang">
+    <Key>
+      <PropertyRef Name="MaKH" />
+    </Key>
+    <Property Name="MaKH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenKH" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SDT" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DiaChi" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="MaTK" Type="Int32" />
+    <NavigationProperty Name="HoaDons" Relationship="BanDoDienTuModel.FK_HoaDon_KhachHang" FromRole="KhachHang" ToRole="HoaDon" />
+    <NavigationProperty Name="User" Relationship="BanDoDienTuModel.FK_KhachHang_User" FromRole="KhachHang" ToRole="User" />
+  </EntityType>
+  <EntityType Name="LoaiSanPham">
+    <Key>
+      <PropertyRef Name="MaLoai" />
+    </Key>
+    <Property Name="MaLoai" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenLoai" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="NhapSanPham">
+    <Key>
+      <PropertyRef Name="MaNhap" />
+    </Key>
+    <Property Name="MaNhap" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaSP" Type="Int32" />
+    <Property Name="SoLuong" Type="Int32" />
+    <Property Name="DonGia" Type="Int64" />
+    <Property Name="NgayNhap" Type="DateTime" Precision="0" />
+    <Property Name="TongTien" Type="Int64" />
+    <Property Name="GhiChu" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SanPham" Relationship="BanDoDienTuModel.FK_SanPham_NhapSanPham" FromRole="NhapSanPham" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="NhaSanXuat">
+    <Key>
+      <PropertyRef Name="MaNSX" />
+    </Key>
+    <Property Name="MaNSX" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TenNSX" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="SanPhams" Relationship="BanDoDienTuModel.FK_SanPham_NhaSanXuat" FromRole="NhaSanXuat" ToRole="SanPham" />
+  </EntityType>
+  <EntityType Name="PhanHoi">
+    <Key>
+      <PropertyRef Name="MaPH" />
+    </Key>
+    <Property Name="MaPH" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TieuDe" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="TenNguoiGui" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Email" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <Property Name="NoiDung" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Role">
+    <Key>
+      <PropertyRef Name="MaPQ" />
+    </Key>
+    <Property Name="MaPQ" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChucNang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="BanDoDienTuModel.FK_User_Role" FromRole="Role" ToRole="User" />
+  </EntityType>
+  <EntityType Name="SanPham">
+    <Key>
+      <PropertyRef Name="MaSP" />
+    </Key>
+    <Property Name="MaSP" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MaCTSP" Type="Int32" Nullable="false" />
+    <Property Name="TenSP" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MaLoai" Type="Int32" />
+    <Property Name="SoLuongTrongKho" Type="Int32" />
+    <Property Name="MaNSX" Type="Int32" />
+    <Property Name="TinhTrang" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="NoiDung" Type="String" MaxLength="1000" FixedLength="false" Unicode="true" />
+    <Property Name="Hinh" Type="String" MaxLength="100" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="ChiTietHoaDons" Relationship="BanDoDienTuModel.FK_ChiTietHoaDon_SanPham" FromRole="SanPham" ToRole="ChiTietHoaDon" />
+    <NavigationProperty Name="ChiTietSanPham" Relationship="BanDoDienTuModel.FK_SanPham_ChiTietSanPham" FromRole="SanPham" ToRole="ChiTietSanPham" />
+    <NavigationProperty Name="NhapSanPhams" Relationship="BanDoDienTuModel.FK_SanPham_NhapSanPham" FromRole="SanPham" ToRole="NhapSanPham" />
+    <NavigationProperty Name="NhaSanXuat" Relationship="BanDoDienTuModel.FK_SanPham_NhaSanXuat" FromRole="SanPham" ToRole="NhaSanXuat" />
+    <Property Name="GiaBan" Type="Int64" />
+  </EntityType>
+  <EntityType Name="ThongKe">
+    <Key>
+      <PropertyRef Name="MaThongKe" />
+    </Key>
+    <Property Name="MaThongKe" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Nam" Type="Int32" />
+    <Property Name="Thang" Type="Int32" />
+    <Property Name="Ngay" Type="Int32" />
+    <Property Name="SoLuongBanRa" Type="Int32" />
+    <Property Name="SoLuongNhapVao" Type="Int32" />
+    <Property Name="TongThu" Type="Int64" />
+    <Property Name="TongChi" Type="Int64" />
+    <Property Name="LoiNhuan" Type="Int64" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="MaTK" />
+    </Key>
+    <Property Name="MaTK" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Username" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="MaPQ" Type="Int32" />
+    <NavigationProperty Name="KhachHangs" Relationship="BanDoDienTuModel.FK_KhachHang_User" FromRole="User" ToRole="KhachHang" />
+    <NavigationProperty Name="Role" Relationship="BanDoDienTuModel.FK_User_Role" FromRole="User" ToRole="Role" />
+  </EntityType>
+  <Association Name="FK_ChiTietHoaDon_HoaDon">
+    <End Type="BanDoDienTuModel.HoaDon" Role="HoaDon" Multiplicity="1" />
+    <End Type="BanDoDienTuModel.ChiTietHoaDon" Role="ChiTietHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="MaHD" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDon">
+        <PropertyRef Name="MaHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ChiTietHoaDon_SanPham">
+    <End Type="BanDoDienTuModel.SanPham" Role="SanPham" Multiplicity="1" />
+    <End Type="BanDoDienTuModel.ChiTietHoaDon" Role="ChiTietHoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSP" />
+      </Principal>
+      <Dependent Role="ChiTietHoaDon">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SanPham_ChiTietSanPham">
+    <End Type="BanDoDienTuModel.ChiTietSanPham" Role="ChiTietSanPham" Multiplicity="1" />
+    <End Type="BanDoDienTuModel.SanPham" Role="SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ChiTietSanPham">
+        <PropertyRef Name="MaCTSP" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaCTSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_GiaoHang_HoaDon">
+    <End Type="BanDoDienTuModel.HoaDon" Role="HoaDon" Multiplicity="1" />
+    <End Type="BanDoDienTuModel.GiaoHang" Role="GiaoHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="HoaDon">
+        <PropertyRef Name="MaHD" />
+      </Principal>
+      <Dependent Role="GiaoHang">
+        <PropertyRef Name="MaHD" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_HoaDon_KhachHang">
+    <End Type="BanDoDienTuModel.KhachHang" Role="KhachHang" Multiplicity="0..1" />
+    <End Type="BanDoDienTuModel.HoaDon" Role="HoaDon" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="KhachHang">
+        <PropertyRef Name="MaKH" />
+      </Principal>
+      <Dependent Role="HoaDon">
+        <PropertyRef Name="MaKH" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_KhachHang_User">
+    <End Type="BanDoDienTuModel.User" Role="User" Multiplicity="0..1" />
+    <End Type="BanDoDienTuModel.KhachHang" Role="KhachHang" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="MaTK" />
+      </Principal>
+      <Dependent Role="KhachHang">
+        <PropertyRef Name="MaTK" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SanPham_NhapSanPham">
+    <End Type="BanDoDienTuModel.SanPham" Role="SanPham" Multiplicity="0..1" />
+    <End Type="BanDoDienTuModel.NhapSanPham" Role="NhapSanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="SanPham">
+        <PropertyRef Name="MaSP" />
+      </Principal>
+      <Dependent Role="NhapSanPham">
+        <PropertyRef Name="MaSP" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_SanPham_NhaSanXuat">
+    <End Type="BanDoDienTuModel.NhaSanXuat" Role="NhaSanXuat" Multiplicity="0..1" />
+    <End Type="BanDoDienTuModel.SanPham" Role="SanPham" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NhaSanXuat">
+        <PropertyRef Name="MaNSX" />
+      </Principal>
+      <Dependent Role="SanPham">
+        <PropertyRef Name="MaNSX" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_Role">
+    <End Type="BanDoDienTuModel.Role" Role="Role" Multiplicity="0..1" />
+    <End Type="BanDoDienTuModel.User" Role="User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Role">
+        <PropertyRef Name="MaPQ" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="MaPQ" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

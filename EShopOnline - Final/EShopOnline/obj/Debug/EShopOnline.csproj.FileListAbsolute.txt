@@ -1,0 +1,175 @@
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\ApplicationInsights.config
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\csc.exe
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\vbc.exe
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\EShopOnline.dll.config
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\EShopOnline.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\EShopOnline.pdb
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Antlr3.Runtime.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.Web.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Newtonsoft.Json.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Helpers.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Mvc.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Optimization.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Razor.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.WebPages.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.WebPages.Razor.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\WebGrease.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.Web.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Helpers.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Mvc.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Optimization.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.Razor.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.WebPages.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\System.Web.WebPages.Razor.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Antlr3.Runtime.pdb
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\bin\Newtonsoft.Json.xml
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\obj\Debug\EShopOnline.csprojResolveAssemblyReference.cache
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\obj\Debug\EShopOnline.dll
+C:\Users\MyPC\CNNET\EShopOnline\EShopOnline\obj\Debug\EShopOnline.pdb
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\ApplicationInsights.config
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\csc.exe
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\vbc.exe
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EShopOnline.dll.config
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EShopOnline.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EShopOnline.pdb
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Antlr3.Runtime.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.Web.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Newtonsoft.Json.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Helpers.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Mvc.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Optimization.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Razor.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.WebPages.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.WebPages.Razor.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\WebGrease.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.Web.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Helpers.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Mvc.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Optimization.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.Razor.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.WebPages.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\System.Web.WebPages.Razor.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Antlr3.Runtime.pdb
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\Newtonsoft.Json.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\obj\Debug\EShopOnline.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\obj\Debug\EShopOnline.pdb
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EntityFramework.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EntityFramework.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\PagedList.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\PagedList.Mvc.dll
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\PagedList.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\bin\PagedList.Mvc.xml
+C:\Users\MyPC\CNNET\EShopOnline - Copy\EShopOnline\obj\Debug\EShopOnline.csprojResolveAssemblyReference.cache
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\ApplicationInsights.config
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\csc.exe
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\Microsoft.CSharp.Core.targets
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\Microsoft.VisualBasic.Core.targets
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\System.Collections.Immutable.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\System.Reflection.Metadata.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\vbc.exe
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\VBCSCompiler.exe
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\roslyn\VBCSCompiler.exe.config
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EShopOnline.dll.config
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EShopOnline.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EShopOnline.pdb
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Antlr3.Runtime.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EntityFramework.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EntityFramework.SqlServer.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.Agent.Intercept.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.DependencyCollector.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.PerfCounterCollector.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.Web.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.WindowsServer.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.ApplicationInsights.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.Web.Infrastructure.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Newtonsoft.Json.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\PagedList.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\PagedList.Mvc.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Helpers.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Mvc.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Optimization.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Razor.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.WebPages.Deployment.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.WebPages.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.WebPages.Razor.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\WebGrease.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EntityFramework.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\EntityFramework.SqlServer.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.DependencyCollector.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.ServerTelemetryChannel.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.Web.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.AI.WindowsServer.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.ApplicationInsights.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\PagedList.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\PagedList.Mvc.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Helpers.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Mvc.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Optimization.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.Razor.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.WebPages.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.WebPages.Deployment.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\System.Web.WebPages.Razor.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Antlr3.Runtime.pdb
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\bin\Newtonsoft.Json.xml
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\obj\Debug\EShopOnline.csprojResolveAssemblyReference.cache
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\obj\Debug\EShopOnline.dll
+C:\Users\MyPC\CNNET\EShopOnline - Final\EShopOnline\obj\Debug\EShopOnline.pdb

@@ -1,0 +1,136 @@
+﻿@model IEnumerable<EShopOnline.Models.Cart>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <script type="text/javascript">
+        $(function () {
+            $(":input").bind('keyup mouseup', function () {
+                $("#" + $(this).attr('data-id')).html(parseInt($(this).val()) * parseInt($('#DonGia_' + $(this).attr('data-id')).text()));
+                $('#tongtien').html(parseInt($(this).val()) * parseInt($('#DonGia_' + $(this).attr('data-id')).text()));
+            });
+            $('a').click(function () {
+                //alert($(this).attr('data-id'));
+                //$('#myModal').modal('show');
+                $.ajax({
+                    url: "Cart/DeleteCart",
+                    dataType: 'text',
+                    data: { id: $(this).attr('data-id') },
+                    success: function (string) {
+                        if (string == "success") {
+                            $("#modalcontent").text("Xóa sản phẩm thành công")
+                        }
+                        $('#myModal').modal('show');
+                    }
+                })
+            })
+        })
+    </script>
+    }
+
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Add To Cart</h4>
+            </div>
+            <div class="modal-body">
+                <p id="modalcontent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+
+<section id="cart_items">
+    <div class="container">
+        <div class="breadcrumbs">
+            <ol class="breadcrumb">
+                <li><a href="@Url.Action("Index","Home")">Home</a></li>
+                <li class="active">Shopping Cart</li>
+            </ol>
+        </div>
+        <div class="table-responsive cart_info">
+            <table class="table table-condensed">
+                <thead>
+                    <tr class="cart_menu">
+                        <td class="image">Item</td>
+                        <td class="description"></td>
+                        <td class="price">Price</td>
+                        <td class="quantity">Quantity</td>
+                        <td class="total">Total</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody>
+                    @{
+                        foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="cart_product">
+                                    <a href=""><img style="width:100px; height:150px;" src="~/Image/Phone/apple/@item.Hinh" alt=""></a>
+                                </td>
+                                <td class="cart_description">
+                                    <h4><a href="">@item.TenSP</a></h4>
+                                </td>
+                                <td class="cart_price">
+                                    <p class="" id="DonGia_@item.MaSP">@item.DonGia</p>
+                                </td>
+                                <td class="cart_quantity">
+                                    <div class="cart_quantity_button">
+                                        <input data-id="@item.MaSP" class="cart_quantity_input" type="number" min="1" name="quantity" value="1" >
+                                        
+                                    </div>
+                                </td>
+                                <td class="cart_total">
+                                    <p id="@item.MaSP" class="cart_total_price">@item.TongTien</p>
+                                </td>
+                                <td class="cart_delete">
+                                    <a data-id="@item.MaSP" class="cart_quantity_delete" href=""><i class="fa fa-times"></i></a>
+                                </td>
+                            </tr>
+                        }
+                    }
+                    
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section> <!--/#cart_items-->
+
+
+<section id="do_action">
+    <div class="container">
+        <div class="heading">
+            <h3>What would you like to do next?</h3>
+            <p>Choose if you have a discount code or reward points you want to use or would like to estimate your delivery cost.</p>
+        </div>
+        <div class="row">
+           
+            <div class="col-sm-6">
+                <div class="total_area">
+                    <ul>
+                        @{ 
+                            long? tong = 0;
+                            foreach(var item in Model)
+                            {
+                                tong += item.TongTien;
+                            }
+                        }
+                        <li>Shipping Cost <span>Free</span></li>
+                        <li>Total <span id="tongtien">@tong</span></li>
+                    </ul>
+                    <a class="btn btn-default update" href="">Update</a>
+                    <a class="btn btn-default check_out" href="@Url.Action("Checkout","Checkout")">Check Out</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section><!--/#do_action-->

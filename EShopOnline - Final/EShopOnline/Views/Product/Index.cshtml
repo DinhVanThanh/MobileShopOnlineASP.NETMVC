@@ -1,0 +1,101 @@
+﻿
+@model PagedList.IPagedList<EShopOnline.Models.Product>
+@using PagedList.Mvc;
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@section scripts{
+    <script>
+        $(function () {
+            $('a').click(function () {
+                //alert($(this).attr('data-id'));
+                //$('#myModal').modal('show');
+                $.ajax({
+                    url: "Cart/AddToCart",
+                    dataType:'text',
+                    data: { id: $(this).attr('data-id') },
+                    success: function (string) {
+                        if (string == "success")
+                        {
+                            $("#modalcontent").text("Thêm vào giỏ hàng thành công")
+                        }
+                        else if(string == "fail")
+                        {
+                            $("#modalcontent").text("Thêm vào giỏ hàng thất bại")
+                        }
+                        else {
+                            $("#modalcontent").text("Đăng nhập để mua hàngs")
+                        }
+                        $('#myModal').modal('show');
+                    }
+                })
+            })
+        })
+    </script>
+    }
+
+<div id="myModal" class="modal fade">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <h4 class="modal-title">Add To Cart</h4>
+            </div>
+            <div class="modal-body">
+                <p id="modalcontent"></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+@Html.Partial("Adverts")
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-3">
+                @Html.Partial("Sidebar")
+            </div>
+
+            <div class="col-sm-9 padding-right">
+                <div class="features_items">
+                    <!--features_items-->
+                    <h2 class="title text-center" >@ViewBag.Brand Phones</h2>
+                        @{
+                            foreach (var item in Model)
+                            {
+                                <div class="col-sm-4">
+                                    <div class="product-image-wrapper">
+                                        <div class="single-products">
+                                            <div class="productinfo text-center">
+                                                <img src="~/image/Phone/apple/@item.Hinh" alt="" />
+                                                <h2>@item.DonGia</h2>
+                                                <p>@item.TenSP</p>
+                                                <a href="@Url.Action("Index", "ProductDetail", new { id = @item.MaSP})" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Detail</a>
+                                                <a data-id="@item.MaSP" class="btn btn-default add-to-cart"><i class="fa fa-shopping-cart"></i>Add To Cart</a>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+                        }
+                    
+                </div><!--features_items-->
+                <div class="row">
+
+                    <div class="col-md-12">
+                        @Html.PagedListPager(Model, page => Url.Action("Index", new { page }))
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+        
+    </div>
+</section>
